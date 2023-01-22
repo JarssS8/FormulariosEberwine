@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+
+
+        <section class="hidden" id="main-icon">
+            <div class="symbol">
+                <div class="deathly"></div>
+                <div class="hallows"></div>
+            </div>
+            <h1 class="waiting-text">Te estamos esperando...</h1>
+        </section>
+
+        <section class="hidden" id="form">
+            <form id="htmlForm" method="GET" action="https://script.google.com/macros/s/AKfycbx_Xhag9P8oksrjUoiPtR8hFYnQ9UZXqmOwRwDZ_p_AI2-Y7k4KVZBNHixl_ff9Uqdx/exec">
+                <div class="row row-special">
+                    <div>
+                        <input type="text" id="name" name="Nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <input type="text" id="twitch" name="Canal de Twitch" placeholder="Canal de Twitch" required>
+                    </div>
+                </div>
+                <div class="row row-special">
+                    <div>
+                        <input type="text" id="social" name="Redes Sociales" placeholder="Enlace a redes" required>
+                    </div>
+                    <div>
+                        <input type="text" id="discord" name="Discord" placeholder="Usuario de Discord" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <textarea id="rolExp" name="Experiencia en Rol" rows="4" cols="50"
+                        placeholder="¿Has tenido experiencia en rol? En caso afirmativo, ¿en qué juegos y servidores?"
+                        required></textarea>
+                </div>
+                <div class="row">
+                    <textarea id="project" name="Como nos has conocido" rows="4" cols="50"
+                        placeholder="¿Cómo conociste el proyecto? Menciona si te lo han recomendado y quién."
+                        required></textarea>
+                </div>
+                <div class="row">
+                    <textarea id="why" name="Porque quieres entrar" rows="4" cols="50"
+                        placeholder="¿Por qué te gustaría formar parte de EBERWINE RP?" required></textarea>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="send-button">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
