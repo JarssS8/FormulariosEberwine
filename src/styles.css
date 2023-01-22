@@ -211,14 +211,6 @@ form {
     border-radius: 15px;
 }
 
-tittle {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1em;
-}
-
 .row-special {
     display: flex;
     width: 100%;
@@ -301,4 +293,28 @@ button:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        width: 95%;
+    }
+
+    input,
+    textarea,
+    textarea::placeholder {
+        font-size: 1em;
+    }
+
+    .row>div {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .waiting-text {
+        font-size: 2em;
+    }
 }
