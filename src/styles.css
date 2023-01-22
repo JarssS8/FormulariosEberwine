@@ -8,6 +8,7 @@
 *:after {
     box-sizing: border-box;
     outline: none;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -50,6 +51,19 @@ body:after {
     animation: clouds2 100s linear infinite;
 }
 
+#scroll-down::before {
+    content: "";
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgb(255, 255, 255);
+}
+
 @keyframes clouds1 {
     to {
         background-position: 200%;
@@ -59,6 +73,25 @@ body:after {
 @keyframes clouds2 {
     to {
         background-position: -200%;
+    }
+}
+
+
+#main-icon {
+    animation: idle-animation 5s infinite;
+}
+
+@keyframes idle-animation {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
     }
 }
 

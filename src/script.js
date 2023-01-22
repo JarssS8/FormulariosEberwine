@@ -12,8 +12,9 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 const sections = document.querySelectorAll('section');
-
+let scrolled = false;
 window.addEventListener('scroll', () => {
+    scrolled = true;
     sections.forEach((section, index) => {
         const nextSection = sections[index + 1];
         const top = section.getBoundingClientRect().top;
@@ -29,4 +30,9 @@ window.addEventListener('scroll', () => {
     });
 });
 
-
+document.querySelector("*").addEventListener("click", function () {
+    if (!scrolled) {
+        scrolled = true;
+        location.href = "#form";
+    }
+});
